@@ -1,0 +1,2 @@
+;;; Generated package description from quickrun.el  -*- no-byte-compile: t -*-
+(define-package "quickrun" "2.3.1" "Run commands quickly" '((emacs "24.3")) :commit "0133cac651918071a824e85b55e10d44f32a1979" :authors '(("Syohei YOSHIDA" . "syohex@gmail.com")) :maintainers '(("Syohei YOSHIDA" . "syohex@gmail.com")) :maintainer '("Syohei YOSHIDA" . "syohex@gmail.com") :url "https://github.com/syohex/emacs-quickrun")
