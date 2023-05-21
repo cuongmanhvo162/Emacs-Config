@@ -4,6 +4,10 @@
 ;; Display line numbers in every buffer
 (global-display-line-numbers-mode 1)
 
+;; Hide scrollbar
+(customize-set-variable 'scroll-bar-mode nil)
+(customize-set-variable 'horizontal-scroll-bar-mode nil)
+
 ;; Set default font
 (set-face-attribute 'default nil
                     :family "DejaVuSansMono Nerd Font"
