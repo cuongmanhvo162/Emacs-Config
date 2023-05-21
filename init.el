@@ -4,6 +4,9 @@
 ;; Display line numbers in every buffer
 (global-display-line-numbers-mode 1)
 
+;; Non-blinking cursor
+(blink-cursor-mode 0)
+
 ;; Hide scrollbar
 (customize-set-variable 'scroll-bar-mode nil)
 (customize-set-variable 'horizontal-scroll-bar-mode nil)
@@ -35,7 +38,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(zenburn-theme monokai-theme projectile quickrun dart-mode json-mode)))
+   '(evil zenburn-theme monokai-theme projectile quickrun dart-mode json-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -69,3 +72,7 @@
 
 ;; Auto-refresh dired on file change
 (add-hook 'dired-mode-hook 'auto-revert-mode)
+
+;; Enable Evil
+(require 'evil)
+(evil-mode 1)
