@@ -38,7 +38,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(evil zenburn-theme monokai-theme projectile quickrun dart-mode json-mode)))
+   '(auto-complete evil zenburn-theme monokai-theme projectile quickrun dart-mode json-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -76,3 +76,7 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
+
+
+;; Auto complete basic config
+(ac-config-default)
